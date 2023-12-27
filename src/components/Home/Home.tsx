@@ -1,6 +1,7 @@
 import BingoGame from "../BingoGame/BingoGame";
 import { useState, useEffect } from "react";
 import "./Home.css";
+import { Typography } from "@mui/material";
 const Home = () => {
   const [backgroundIndex, setBackgroundIndex] = useState(0);
   const backgrounds = [
@@ -37,9 +38,16 @@ const Home = () => {
         transition: "background-image 0.5s ease-in-out",
       }}
     >
-      <h1>Tombala Oyunu</h1>
+      <div id="header">
+        <h1>Tombala Oyunu</h1>
+      </div>
       <BingoGame />
-      <h6>@degirmenkagan</h6>
+      <Typography
+        marginTop={5}
+        sx={{ fontSize: 22, color: "white", WebkitTextStroke: "0.2px black" }}
+      >
+        @degirmenkagan
+      </Typography>
     </div>
   );
 };

@@ -7,3 +7,10 @@
   align-items: center;
   justify-content: center;
 }
+#header {
+  background-color: #b31323;
+  margin: 10px;
+  border-radius: 50%;
+  border: 5px solid black;
+  padding: 10px;
+}
