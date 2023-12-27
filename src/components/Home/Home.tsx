@@ -2,6 +2,7 @@ import BingoGame from "../BingoGame/BingoGame";
 import { useState, useEffect } from "react";
 import "./Home.css";
 import { Typography } from "@mui/material";
+import BingoList from "../BingoList";
 const Home = () => {
   const [backgroundIndex, setBackgroundIndex] = useState(0);
   const backgrounds = [
@@ -41,10 +42,21 @@ const Home = () => {
       <div id="header">
         <h1>Tombala Oyunu</h1>
       </div>
-      <BingoGame />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+          alignItems: "flex-start",
+          gap: 50,
+        }}
+      >
+        <BingoGame />
+        <BingoList />
+      </div>
       <Typography
         marginTop={5}
-        sx={{ fontSize: 22, color: "white", WebkitTextStroke: "0.2px black" }}
+        sx={{ fontSize: 25, color: "#", WebkitTextStroke: "0.4px black" }}
       >
         @degirmenkagan
       </Typography>
