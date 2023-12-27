@@ -47,16 +47,15 @@ const BingoGame = () => {
       >
         {numbers.map((number, index) => (
           <Chip
-            component={"div"}
             key={index}
             color={number.clicked ? "secondary" : "primary"}
             label={number.value}
             sx={{
-              fontSize: 50,
+              fontSize: window.screen.width > 1900 ? 50 : 22,
               color: number.clicked ? "gray" : "white",
               borderRadius: 20,
-              width: "80px",
-              height: "80px",
+              width: window.screen.width > 1900 ? "80px" : "50px",
+              height: window.screen.width > 1900 ? "80px" : "50px",
             }}
             onClick={() => handleClick(index)}
           />

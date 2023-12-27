@@ -5,7 +5,7 @@ import { bingoTheme } from "./components/CustomThemes";
 
 function App() {
   return (
-    <div style={{ width: "100vw", height: "100vh" }}>
+    <div style={{ width: "100dvw", height: "100dvh" }}>
       <ThemeProvider theme={bingoTheme}>
         <Home />
       </ThemeProvider>
