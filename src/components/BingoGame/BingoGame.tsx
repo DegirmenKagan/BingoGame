@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Chip from "@mui/material/Chip";
-import Stack from "@mui/material/Stack";
-import { Box, bgcolor } from "@mui/system";
+import { Box } from "@mui/system";
 import { IBingoItem } from "./BingoData";
 import { Card, ThemeProvider } from "@mui/material";
 import { bingoTheme } from "../CustomThemes";
@@ -57,7 +56,7 @@ const BingoGame = () => {
               sx={{
                 fontSize: 50,
                 // padding: 3,
-
+                color: number.clicked ? "gray" : "white",
                 borderRadius: 20,
                 width: "80px",
                 height: "80px",
