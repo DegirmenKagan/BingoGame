@@ -1,5 +1,4 @@
 import { createTheme, responsiveFontSizes } from "@mui/material";
-import { purple, grey } from "@mui/material/colors";
 
 export const bingoTheme = createTheme({
   palette: {
