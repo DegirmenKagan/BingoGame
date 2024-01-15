@@ -35,7 +35,7 @@ const BingoList = () => {
       />
       <TextField
         id="filled-basic"
-        label="3. Çinko"
+        label="TOMBALA!"
         variant="filled"
         focused={bingo3 != ""}
         value={bingo3}
