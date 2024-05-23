@@ -6,18 +6,18 @@ import BingoList from "../BingoList";
 const Home = () => {
   const [backgroundIndex, setBackgroundIndex] = useState(0);
   const backgrounds = [
-    "url(src/assets/bg1.jpg)",
-    "url(src/assets/bg2.jpg)",
-    "url(src/assets/bg3.jpg)",
-    "url(src/assets/bg4.jpg)",
-    "url(src/assets/bg5.jpg)",
-    "url(src/assets/bg6.jpg)",
-    "url(src/assets/bg7.jpg)",
-    "url(src/assets/bg8.jpg)",
-    "url(src/assets/bg9.jpg)",
-    "url(src/assets/bg10.jpg)",
-    "url(src/assets/bg11.jpg)",
-    "url(src/assets/bg12.jpg)",
+    "url(public/assets/bg1.jpg)",
+    "url(public/assets/bg2.jpg)",
+    "url(public/assets/bg3.jpg)",
+    "url(public/assets/bg4.jpg)",
+    "url(public/assets/bg5.jpg)",
+    "url(public/assets/bg6.jpg)",
+    "url(public/assets/bg7.jpg)",
+    "url(public/assets/bg8.jpg)",
+    "url(public/assets/bg9.jpg)",
+    "url(public/assets/bg10.jpg)",
+    "url(public/assets/bg11.jpg)",
+    "url(public/assets/bg12.jpg)",
   ];
 
   useEffect(() => {
